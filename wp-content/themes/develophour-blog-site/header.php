@@ -21,19 +21,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/bootstrap.min.css'; ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/now-ui-kit.min.css'; ?>">
-	<style>
-		@media screen and (max-width: 991px) {
-			.sidebar-collapse .navbar-collapse:before {
-				background: #2ca8ff;
-				background: linear-gradient(#2ca8ff,#2c2c2c 80%);
-			}
-		}
-
-		button:hover {
-			outline: none;
-			border-color: transparent;
-		}
-	</style>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/custom.css'; ?>">
 </head>
 
 <body class="index-page sidebar-collapse">

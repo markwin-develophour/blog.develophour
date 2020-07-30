@@ -21,8 +21,8 @@ get_header();
 		</div>
 		<div class="content-center">
 		<div class="container">
-			<h1 class="title">DevelopHour</h1>
-			<h5>Check our latest news.</h5>
+			<h1 class="title landing-title">DevelopHour</h1>
+			<h5 class="landing-description">Check our latest news.</h5>
 		</div>
 		</div>
 	</div>

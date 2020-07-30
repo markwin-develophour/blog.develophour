@@ -1,0 +1,116 @@
+@media screen and (max-width: 991px) {
+    .sidebar-collapse .navbar-collapse:before {
+        background: #2ca8ff;
+        background: linear-gradient(#2ca8ff,#2c2c2c 80%);
+    }
+}
+
+button:hover {
+    outline: none;
+    border-color: transparent;
+}
+
+.section-news .card {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out,
+                -webkit-transform 0.5s ease-in-out,
+                -moz-transform 0.5s ease-in-out,
+                opacity 0.8s ease-in-out;
+}
+
+.section-news .card h4,
+.section-news .card p, 
+.section-news .card a {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out 0.55s,
+                -webkit-transform 0.5s ease-in-out 0.55s,
+                -moz-transform 0.5s ease-in-out 0.55s,
+                opacity 0.8s ease-in-out 0.55s;
+}
+
+.section-news .card p {
+    transition-delay: 0.65s;
+}
+
+.section-news .card a {
+    transition-delay: 0.75s;
+}
+
+.section-news .card.is-shown h4,
+.section-news .card.is-shown p,
+.section-news .card.is-shown a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-news .card.is-shown {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.landing-title,
+.landing-description {
+    letter-spacing: 15px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: letter-spacing 1s ease-in-out,
+                opacity 1.5s ease-in-out,
+                filter 1s ease-in-out;
+}
+
+.landing-title.is-shown,
+.landing-description.is-shown {
+    letter-spacing: 0;
+    opacity: 1;
+    filter: blur(0);
+}
+
+.landing-description {
+    transition-delay: 0.2s;
+}
+
+.single-content > * {
+    opacity: 0;
+    position: relative;
+    transform: translateY(-20px);
+}
+
+.single-content > *.is-shown {
+    opacity: 1;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out,
+                -webkit-transform 0.5s ease-in-out,
+                -moz-transform 0.5s ease-in-out,
+                opacity 0.8s ease-in-out;
+}
+
+.single-pagination-prev {
+    opacity: 0;
+    position: relative;
+    transform: translateX(-20px);
+    transition: transform 0.5s ease-in-out,
+                -webkit-transform 0.5s ease-in-out,
+                -moz-transform 0.5s ease-in-out,
+                opacity 0.8s ease-in-out;
+}
+
+.single-pagination-next {
+    opacity: 0;
+    position: relative;
+    transform: translateX(20px);
+    transition: transform 0.5s ease-in-out,
+                -webkit-transform 0.5s ease-in-out,
+                -moz-transform 0.5s ease-in-out,
+                opacity 0.8s ease-in-out;
+}
+
+.single-pagination.is-shown .single-pagination-prev,
+.single-pagination.is-shown .single-pagination-next {
+    opacity: 1;
+    position: relative;
+    transform: translateX(0);
+}
