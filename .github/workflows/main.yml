@@ -1,0 +1,19 @@
+# Deploying blog site via FTP in GoDaddy.
+
+name: Publish Website
+
+on: push
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: Automattic/FTP-Deploy-Action@3.0.1
+      with:
+        ftp-server: sftp://sftp.wp.com/htdocs/
+        ftp-username: ${{ secrets.FTP_USER }} #add sftp/ftp username to settings > secrets
+        ftp-password: ${{ secrets.FTP_PASSWORD }} #add sftp/ftp password to settings > secrets
